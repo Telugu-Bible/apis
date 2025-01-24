@@ -1,8 +1,10 @@
+const cors = require("cors");
 const express = require("express");
 const axios = require("axios");
 const app = express();
 const port = 3000;
 
+app.use(cors());
 const BASE_URL =
   "https://raw.githubusercontent.com/Telugu-Bible/all-books/main";
 
